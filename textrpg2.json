@@ -1,0 +1,195 @@
+{
+"zumbi": {
+"vida": 100, 
+"dano": 15
+},
+"player": {
+"vida": 85,
+"dano": 15
+},
+"Boss":{
+"vida": 500,
+"dano": 35
+},
+"bandido":{
+"vida": 150,
+"dano": 30
+},
+"esqueleto":{
+"vida":75,
+"dano": 45
+},
+"Troll":{
+"vida": 250,
+"dano": 50
+},
+"sol": {
+"zumbi":{
+"vida": -10,
+"dano": -5
+},
+"player":{
+"vida": 12,
+"dano": 3
+},
+"esqueleto":{
+"vida": 10,
+"dano": 5
+},
+"bandido":{
+"vida": 3,
+"dano":2
+},
+"Troll":{
+"vida": 25,
+"dano": 30
+},
+"Boss":{
+"vida": 50,
+"dano":10
+}
+},
+"lua":{
+"zumbi":{
+"vida": 15,
+"dano": 3
+},
+"player":{
+"vida": -10,
+"dano": -5
+},
+"esqueleto":{
+"vida": 20,
+"dano": 10
+},
+"bandido":{
+"vida": -30,
+"dano": -15
+},
+"Troll":{
+"vida": 35,
+"dano": 15
+},
+"Boss":{
+"vida": 45,
+"dano": 45
+}
+},
+"nenhum":{
+"zumbi":{
+"vida": 0,
+"dano": 0
+},
+"player":{
+"vida":0,
+"dano":0
+},
+"esqueleto":{
+"vida":0,
+"dano":0
+},
+"bandido":{
+"vida": 0,
+"dano":0
+},
+"Troll":{
+"vida": 0,
+"dano": 0
+},
+"Boss":{
+"vida": 0,
+"dano": 0
+}
+},
+"chuva":{
+"ptimeldano zumbieyer":{
+"vida": 250,
+"dano":25
+},
+"player":{
+"vida":0,
+"dano": 0
+},
+"zumbi":{
+"vida": 0,
+"dano":0
+},
+"esqueleto":{
+"vida": 5,
+"dano": 10
+},
+"bandido":{
+"vida": 5,
+"dano": 2
+},
+"Troll":{
+"vida": -10,
+"dano": 5
+},
+"Boss":{
+"vida": 10,
+"dano": 10
+}
+},
+"cura":{
+"cura":{
+"player":{
+"vida":  250,
+"dano": 0
+}
+}
+},
+"movimento":{
+"player":{
+"player move":{
+"player.x": 10,
+"player.y":  5
+}
+},
+"zumbi":{
+"zumbi move":{
+"zumbi.x": 30,
+"zumbi.y": 30
+}
+},
+"Boss":{
+"Boss move":{
+"Boss.x": 11,
+"Boss.y":6
+}
+},
+"esqueleto":{
+"esqueleto move":{
+"esqueleto.x": 20,
+"esqueleto.y":25
+}
+},
+"bandido":{
+"bandido move":{
+"bandido.x": 30,
+"bandido.y":25
+}
+},
+"Troll":{
+"Troll move":{
+"Troll.x": 2,
+"Troll.y": 10
+}
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
