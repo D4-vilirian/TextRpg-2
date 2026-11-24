@@ -1,33 +1,18 @@
-name: Gerar APK Pygame
-on: [push]
-
+name: Build APK
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-
-      - name: Configurar Python
-        uses: actions/setup-python@v5
+      - name: Build with Buildozer
+        uses: ArtemSBulgakov/buildozer-action@v1
         with:
-          python-version: '3.10'
-
-      - name: Instalar dependencias
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y git zip unzip openjdk-17-jdk autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
-          pip install buildozer cython==0.29.33 setuptools==65.5.0
-
-      - name: Configurar e Compilar APK
-        run: |
-          buildozer init
-          sed -i 's/source.include_exts = py,png,jpg,kv,atlas/source.include_exts = py,png,jpg,kv,atlas,json/g' buildozer.spec
-          sed -i 's/requirements = python3,kivy/requirements = python3,pygame/g' buildozer.spec
-          yes | buildozer android debug
-
-      - name: Salvar APK
+          buildozer_version: v1.5.0
+          workdir: .
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: MeuRPG-APK
+          name: TextRPG2-APK
           path: bin/*.apk
           
